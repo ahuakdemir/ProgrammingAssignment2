@@ -30,9 +30,9 @@ cacheSolve <- function(x, ...) {
             message("Inverse matrix in cache: ")
             return(m)
         }
-		data <- x$get()
+	data <- x$get()
         m <- solve(data, ...)
-		x$setInverse(m)
+	x$setInverse(m)
         m
 }
 
